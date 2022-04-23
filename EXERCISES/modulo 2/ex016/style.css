@@ -1,0 +1,28 @@
+* {
+    font-family: cursive;
+    /*height: 100;*/
+}
+
+body{
+    background-image: linear-gradient(to right, #63A7D6,#497B9E);
+}
+main{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:10px 10px 10px #2f638b;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+p{
+    text-align:justify;
+}
+
+h1{
+    color:#5792BD;
+    text-align: center;
+    text-shadow: 1px 1px 2px #24618d;
+}
+h2{
+    color:#284357;
+}

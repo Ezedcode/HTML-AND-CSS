@@ -1,0 +1,27 @@
+Body{
+    background-image: linear-gradient(to right, orange, red);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(185, 124, 10);
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1{ 
+~´       text-shadow: 1px 1px 2px rgb(231, 99, 99);
+    text-align: center;
+    color: green;
+}
+
+h2{
+    color: orangered;
+}
+
+p {
+    text-align:justify;
+}
