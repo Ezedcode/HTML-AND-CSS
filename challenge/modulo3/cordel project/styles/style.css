@@ -3,20 +3,29 @@
     padding: 0px;
 }
 
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: Courgette;
+    --font3: Mv boli, kalam;
+}
+
 html, body {
     min-height: 100vh;
     background-color: darkgrey;
+    font-family: var(--font1);
 }
 
 header {
     background-color: black;
     color: white; 
     text-align: center;
+    font-family: var(--font2);
 }
 
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-size: 5vw;
 }
 
 header > p {
@@ -39,6 +48,9 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 section.normal {
@@ -53,7 +65,7 @@ section.image {
 }
 
 section.image > p {
-    width: 400px;
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.253);
     padding: 10px;
 }
