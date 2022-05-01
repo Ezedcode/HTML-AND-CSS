@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 500px;
+            border-collapse: collapse;
+
+        }
+
+        td, th{
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        th {
+            background-color: rgba(77, 18, 18, 0.654);
+        }
+
+        td.number {
+            text-align: right;
+        }
+
+        caption {
+            font-size: 1.5em;
+            padding: 10px;
+            background-color: crimson;
+            background-image: linear-gradient(to bottom,rgb(126, 40, 40), rgb(203, 32, 32), rgb(96, 26, 26));
+            font-weight: bold;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: tomato;
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: rgb(63, 3, 3);
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Use of the hight tables</h1>
+    <!--
+        ANATOMY FOR HIGHT TABLES
+        TABLES
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+
+    <table>
+        <caption>Population of some provinces of Angola</caption>
+        <thead>
+            <tr>
+                <th scope="col">State</th>
+                <th scope="col" style="width: 50px;">Population</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">Luanda</td>
+                <td class = "number">More than 1000</td>
+            </tr>
+            <tr>
+                <td>Ndalatando</td>
+                <td class = "number">More than 100</td>
+            </tr>
+            <tr>
+                <td>Malanje</td>
+                <td class = "number">More than 10000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr id = "footer">
+                <th>Total inhabitant</th>
+                <th>More than 11100</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
